@@ -90,20 +90,25 @@
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
-        <h1>
-<a id="jacksinggithubio" class="anchor" href="#jacksinggithubio" aria-hidden="true"><span class="octicon octicon-link"></span></a>jacksing.github.io</h1>
-
-<p>挑灯观星 博客</p>
-      </section>
-
-      <section class="inner">
-        <h1>多说自定义CSS 让你的多说评论动感起来</h1>
-        <p><a href="http://www.vsay.cn/one-more-custom-css-lets-you-say-comments-city.html">http://www.vsay.cn/one-more-custom-css-lets-you-say-comments-city.html</a></p>
-      </section>
-
-      <section class="inner">
         <h1>OpenEdx 设置smtp发送邮件</h1>
-        <p><a href="openedx/openedx-smtp.html">http://www.vsay.cn/one-more-custom-css-lets-you-say-comments-city.html</a></p>
+            <div style="display: block;"><p>邮件激活功能具体设置方法：</p> 
+            <p>1）配置发件服务器地址和端口</p> 
+            <p>sudo vi /edx/app/edxapp/cms.env.json</p> 
+            <p>sudo vi /edx/app/edxapp/lms.env.json</p> 
+            <p>在以上2个文件里设置</p> 
+            <p>"EMAIL_HOST":&nbsp;"mail.bistu.edu.cn",</p> 
+            <p>"EMAIL_PORT": 25,</p> 
+            <p>"EMAIL_USE_TLS": true,</p> 
+            <p>"SITE_NAME":&nbsp;"这里设置你的域名，将会影响到激活地址的域名",&nbsp;</p> 
+            <p>2）配置发件账号和密码</p> 
+            <p>sudo vi /edx/app/edxapp/cms.auth.json</p> 
+            <p>sudo vi /edx/app/edxapp/lms.auth.json</p> 
+            <p>在以上2个文件里设置</p> 
+            <p>"EMAIL_HOST_USER":&nbsp;"*****",</p> 
+            <p>"EMAIL_HOST_PASSWORD":"*****",</p> 
+            <p>3）确认无误，重启edxapp</p> 
+            <p>sudo /edx/bin/supervisorctl&nbsp;-c&nbsp;/edx/etc/supervisord.conf restart edxapp:</p> 
+            <p>sudo /edx/bin/supervisorctl&nbsp;-c&nbsp;/edx/etc/supervisord.conf restart edxapp_worker:</p></div>
       </section>
 
       <section class="inner">
