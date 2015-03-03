@@ -550,7 +550,7 @@ html:lang(zh-TW) .welcome2 {
 }
 
 
-#ds-reset .ds-avatar img,#ds-reset .ds-avatar img:hover{   
+img,img:hover{   
     -webkit-animation-fill-mode: both;   
     -moz-animation-fill-mode: both;   
     -ms-animation-fill-mode: both;   
@@ -601,7 +601,7 @@ html:lang(zh-TW) .welcome2 {
     100% { transform: rotate(0deg); }   
 }   
   
-#ds-reset .ds-avatar img:hover{   
+img:hover{   
     -webkit-transform-origin: top center;   
     -moz-transform-origin: top center;   
     -o-transform-origin: top center;   
