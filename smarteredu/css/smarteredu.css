@@ -189,7 +189,7 @@ html:lang(zh-TW) .trigger ul.menu {
 	height: 500px;
 	width: 100%;
 	text-align: center;
-	background: url(../image/_banner-sun.jpg) repeat;
+	background: url(image/_banner-sun.jpg) repeat;
 /*background-attachment: scroll;
 background-clip: border-box;
 background-color: rgba(0, 0, 0, 0);
